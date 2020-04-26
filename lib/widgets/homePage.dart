@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'teamPage.dart';
+import 'EmployeePage.dart';
 
 class HomePage extends StatelessWidget {
   final String tabTitle;
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
             ? () {
           Navigator.push(context,MaterialPageRoute(builder: (context)=>TeamPage(),),);
         }
-            : () => print('Employeees'),
+            : () => Navigator.push(context,MaterialPageRoute( builder: (context)=>EmployeePage(),),),
       ),
     );
   }
